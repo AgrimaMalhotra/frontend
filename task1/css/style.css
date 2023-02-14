@@ -109,23 +109,32 @@ footer {
     align-items: flex-end;
 }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+/*mobile view*/
+@media screen and (max-width: 600px) {
     .main {
         flex-direction: column;
     }
-}
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-    .main {
-        flex-direction: column;
+    .left-body {
+        width: 100%;
+    }
+
+    .right-body {
+        width: 100%;
     }
 }
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+/*tab view*/
+@media screen and (max-width: 768px) {
     .main {
         flex-direction: column;
+    }
+
+    .left-body {
+        width: 100%;
+    }
+
+    .right-body {
+        width: 100%;
     }
 }
